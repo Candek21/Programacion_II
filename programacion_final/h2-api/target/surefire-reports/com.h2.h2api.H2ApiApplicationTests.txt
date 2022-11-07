@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.h2.h2api.H2ApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.241 s <<< FAILURE! - in com.h2.h2api.H2ApiApplicationTests
+com.h2.h2api.H2ApiApplicationTests  Time elapsed: 0.24 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+

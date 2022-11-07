@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <title>Centro Médico</title>
+</head>
+<body>
+<header>
+    <style>
+        #intro-example {
+      height: 400px;
+    }
+
+    /* Height for devices larger than 992px */
+    @media (min-width: 992px) {
+      #intro-example {
+        height: 600px;
+      }
+    </style>
+    <nav class="navbar shadow sticky-top border-bottom navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Centro Médico</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"/>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href ="@{/turnos}" href="#">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/pacientes}" href="#">Pacientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/medicos}" href="#">Médicos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+                                    <!-- Fondo  -->
+<div id="intro-example"
+     class="p-5 text-center bg-image"
+     style="background-color: #EAA3A3 ">
+    <div class= "mask rounded" style="background-color: rgba(0, 0, 0, 0); " >
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-black">
+                <br>
+                <h1 class="mb-3">Centro Médico</h1>
+                <br>
+                <a      th:href = "@{/nuevoTurno}"
+                        class="btn btn-outline-light btn-lg m-2"
+                        role="button"
+                        rel="nofollow"
+                        target="_blank"
+                >Ingrese aquí para obtener un nuevo turno
+                </a>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
